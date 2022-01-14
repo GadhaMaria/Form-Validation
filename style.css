@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Vollkorn+SC&display=swap');
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: 'Merriweather', serif;
+    font-family: 'Vollkorn SC', serif;
+    letter-spacing: 2px;
+    display: flex;
+    /* align-items is going to align on vertical axis */
+    align-items: center; 
+    /* justify content is going to align onhorizontal axis */
+    justify-content: center;
+    background-color: #cacfd8;
+
+}
+.container {
+    width: 520px;
+    height: 730px;
+    background-color: white;
+    display: flex;
+    /* flex direction column organises everything top to bottom instead of left to right */
+    flex-direction: column;
+    align-items: center;
+    /* best two ways to make box pop out */
+    border-radius: 10px;
+    box-shadow: 0 5px 30px 10px rgba(0, 0, 0 ,0.2);
+}
+/* form */
+form{
+width: 90%;
+}
+.form-group{
+    height: 80px;
+}
+label{
+    position: relative;
+    bottom: 3px;
+}
+input{
+    width: 100%;
+    height: 34px;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-sizing: border-box;
+    outline: none;
+    transition: all 0.3s;
+}
+input:valid{
+    border: 1px solid green;
+}
+input:invalid{
+    border: 1px solid red;
+}
+button{
+    cursor: pointer;
+    color: white;
+    background: black;
+    border: none;
+    border-radius: 5px;
+    height: 50px;
+    width: 100%;
+    font-family: 'Merriweather', serif; 
+    font-family: 'Vollkorn SC', serif;
+    font-size: 20px;
+    letter-spacing: 2px;
+    margin-top: 7px;
+}
+button:hover{
+    filter: brightness(200%);
+    background: rgb(19, 19, 19);
+}
+button:focus{
+    outline: none;
+}
+.message-container{
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 90%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    color: black;
+}
